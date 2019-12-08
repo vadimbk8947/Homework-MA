@@ -1,0 +1,56 @@
+body {
+  margin: 0;
+}
+
+header {
+  font-family: Arial, Helvetica, sans-serif;
+  
+
+}
+
+.drop-menu > ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  background: #1dd4f5;
+
+}
+
+.drop-menu > ul li a {
+  display: block;
+  padding: 15px 15px;
+  font-size: 16px;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.drop-menu li a:hover {
+  background: #eee;
+  color: #999;
+}
+
+.drop-menu li ul {
+  position: absolute;
+  left: 0;
+  min-width: 100px;
+  display: none;
+  justify-content: center;
+  
+
+}
+
+.drop-menu li > ul li a {
+  /* width: 100vw; */
+  margin: 0;
+  font-size: 14px;
+  text-transform: none;
+  background: #eee;
+  color: #999;
+
+}
+
+.drop-menu li:hover > ul {
+  display: block;
+
+}
