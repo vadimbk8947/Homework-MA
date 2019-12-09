@@ -13,34 +13,94 @@
 </head>
 <body>
   <header>
-    <nav class="drop-menu">
-      <ul>
-        <li><a href="#">home</a></li>
-        <li><a href="#">news</a></li>
-        <li><a href="#">economics</a></li>
-        <li><a href="#">local</a></li>
-        <li><a href="#">sport</a></li>
-        <li><a href="#">culture</a></li>
-        <li><a href="#">travels</a>
-        <ul>
-          <li><a href="#">Amsterdam</a></li>
-          <li><a href="#">Bahams</a></li>
-          <li><a href="#">Jamaica</a></li>
-          <li><a href="#">Las Vegas</a></li>
-          <li><a href="#">London</a></li>
-          <li><a href="#">Los Angeles</a></li>
-          <li><a href="#">Miami</a></li>
-          <li><a href="#">Monreal</a></li>
-          <li><a href="#">Paris</a></li>
-          <li><a href="#">Rome</a></li>
-        </ul>
+    <nav class="menu">
+      <ul class="navigation-list">
+        <li class="navigation-list__item">
+          <a class="navigation-list__btn" href="#">home</a>
         </li>
-        <li><a href="#">living</a></li>
-        <li><a href="#">money</a></li>
-        <li><a href="#">technology</a></li>
-        <li><a href="#">more</a></li>
-      </ul>
+        
+        <li class="navigation-list__item">
+          <a class="navigation-list__btn" href="#">news</a>
+        </li>
 
+        <li class="navigation-list__item">
+          <a class="navigation-list__btn" href="#">economics</a>
+        </li>
+
+        <li class="navigation-list__item">
+          <a class="navigation-list__btn" href="#">local</a>
+        </li>
+
+        <li class="navigation-list__item">
+          <a class="navigation-list__btn" href="#">sport</a>
+        </li>
+
+        <li class="navigation-list__item">
+          <a class="navigation-list__btn" href="#">culture</a>
+        </li>
+
+        <li class="navigation-list__item">
+          <a class="navigation-list__btn" href="#">travels</a>
+        
+          <ul class="navigation-list-travel">
+            <li class="navigation-list-travel_item">
+              <a class="navigation-list-travel_btn" href="#">Amsterdam</a>
+            </li>
+
+            <li class="navigation-list-travel_item">
+              <a class="navigation-list-travel_btn" href="#">Bahams</a>
+            </li>
+
+            <li class="navigation-list-travel_item">
+              <a class="navigation-list-travel_btn" href="#">Jamaica</a>
+            </li>
+
+            <li class="navigation-list-travel_item">
+              <a class="navigation-list-travel_btn" href="#">Las Vegas</a>
+            </li>
+
+            <li class="navigation-list-travel_item">
+              <a class="navigation-list-travel_btn" href="#">London</a>
+            </li>
+
+            <li class="navigation-list-travel_item">
+              <a class="navigation-list-travel_btn" href="#">Los Angeles</a>
+            </li>
+
+            <li class="navigation-list-travel_item">
+              <a class="navigation-list-travel_btn" href="#">Miami</a>
+            </li>
+
+            <li class="navigation-list-travel_item">
+              <a class="navigation-list-travel_btn" href="#">Monreal</a>
+            </li>
+
+            <li class="navigation-list-travel_item">
+              <a class="navigation-list-travel_btn" href="#">Paris</a>
+            </li>
+
+            <li class="navigation-list-travel_item">
+              <a class="navigation-list-travel_btn" href="#">Rome</a>
+            </li>
+          </ul>
+        </li>
+
+        <li class="navigation-list-travel_item">
+          <a class="navigation-list__btn" href="#">living</a>
+        </li>
+
+        <li class="navigation-list-travel_item">
+          <a class="navigation-list__btn" href="#">money</a>
+        </li>
+
+        <li class="navigation-list-travel_item">
+          <a class="navigation-list__btn" href="#">technology</a>
+        </li>
+
+        <li class="navigation-list-travel_item">
+          <a class="navigation-list__btn" href="#">more</a>
+        </li>
+      </ul>
     </nav>
   </header>
   <main>
@@ -48,7 +108,56 @@
   </main>
 
   <footer>
+    <div>
+      <ul class="pagination-list">
+        <li class="pagination-list__start-end">
+          <a class="pagination-list__btn" href="#">&laquo;first</a>
+        </li>
 
+        <li class="pagination-list__start-end">
+          <a href="#">&laquo;prev</a>
+        </li>
+        <li class="pagination-list__number">
+          <a class="pagination-list__btn-number" href="#">1</a>
+        </li>
+
+        <li class="pagination-list__number">
+          <a class="pagination-list__btn-number" href="#">2</a>
+        </li>
+
+        <li class="pagination-list__start-end">
+          <span class="pagination-list__btn-number">...</span>
+        </li>
+
+        <li class="pagination-list__number">
+          <a class="pagination-list__btn-number" href="#">5</a>
+        </li>
+
+        <li class="pagination-list__number">
+          <a class="pagination-list__btn-number" href="#">6</a>
+        </li>
+
+        <li class="pagination-list__number">
+          <a class="pagination-list__btn-number" href="#">7</a>
+        </li>
+
+        <li class="pagination-list__number">
+          <a class="pagination-list__btn-number" href="#">8</a>
+        </li>
+
+        <li class="pagination-list__number">
+          <a class="pagination-list__btn-number" href="#">9</a>
+        </li>
+
+        <li class="pagination-list__start-end">
+          <a class="pagination-list__btn" href="#">next&raquo;</a>
+        </li>
+
+        <li class="pagination-list__start-end">
+          <a class="pagination-list__btn" href="#">last&raquo;</a>
+        </li>
+      </ul>
+    </div>
   </footer>
 
 </body>
