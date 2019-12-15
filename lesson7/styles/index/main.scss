@@ -1,0 +1,185 @@
+
+.main {
+  height: 100vh;
+  padding: 0 210px;
+  font-family: 'Playfair Display', serif;;
+  color: #626262;
+  font-size: 14px;
+  
+  .main__main-article-img {
+    position: absolute;
+    left: 5px;
+    width: 1200px;
+    padding: 20px 70px;
+  }
+
+  &__main-article-wrap {
+    position: relative;
+    top: 630px;
+    // text-align: start;
+
+    .main__main-article-chapter {
+      font-family: 'Ubuntu', sans-serif;
+      text-transform: uppercase;
+      font-size: 14px;
+      // padding: 10px;
+      color: #626262;
+    }
+
+    .main__main-article-caption {
+      font-size: 30px;
+      padding: 10px 10px 40px 0px;
+      color: #626262;
+    }
+    .main__main-article-btn {
+      position: relative;
+      top: 30px;
+      color: #b4ad9e;
+      font-family: 'Ubuntu', sans-serif;
+      text-transform: uppercase;
+      font-size: 14px;
+    }
+
+    .main__main-article-text {
+      line-height: 24px;
+    }
+
+    .__main-article-btn {
+    }
+  }
+
+  &__articles-wrap {
+
+    .main__articles-list  {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-between;
+      // align-items: stretch;
+      // padding: 0px;
+  
+      
+      .main__articles-list-items {
+        display: flex;
+        position: relative;
+        top: 750px;
+        // padding: 20px;
+        
+        width: 420px;
+        height: 540px;
+        
+        // background: red;
+        
+        
+        .main__main-article-img {
+          position: relative;
+          left: 0;
+          padding: 0;
+          object-fit: cover;
+          width: 420px;
+          height: 260px;
+
+          background: black;
+        }
+
+        .main__main-article-wrap {
+          position: relative;
+          top: 290px;
+          left: -420px;
+          flex-basis: 100%;
+
+          .main__main-article-text {
+            width: 420px;
+          }
+        }
+
+      }
+      
+    }
+  // &__second-block {
+  //   margin: 0;
+  //   background: red;
+  // }
+  }
+
+  &__sign-up {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin: 800px 0px 0 0;
+    // top: 800px;
+    left: -210px;
+    width: 1349px;
+    height: 287px;
+    background: #f0f0f0;
+
+    .main__form {
+      // background: red;
+      height: 125px;
+      width: 410px;
+      border-width: 1px;
+      border-bottom-style: solid;
+      
+      &-title {
+        padding: 0 0px 40px 3px;
+        font-size: 30px;
+        color: #333333;
+        font-weight: 500;
+      }
+      
+      &-email {
+        // padding: 5px;
+        margin: 3px;
+        width: 360px;
+        height: 30px;
+        text-align: left;
+        border: none;
+        outline: none;
+        vertical-align: middle;
+        background-color: transparent;
+        font-family: 'Playfair Display', serif;
+        
+      }
+
+      &-submit {
+        position: relative;
+        top: 25px;
+        left: 0px;
+        border: none;
+        outline: none;
+        width: 40px;
+        height: 40px;
+        background: url("../../images/sendIcon.png") no-repeat;
+        cursor: pointer;
+
+      }
+    }
+    
+  }
+
+  section:nth-child(4) {
+    margin: 0;
+    position: relative;
+    top: -600px;
+  }
+
+  &__btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 200px;
+
+    .btn-primary {
+      width: 165px;
+      height: 60px;
+      background-color: transparent;
+      border: 1px solid #626262;
+      font-family: 'Playfair Display', serif;
+      color: #626262;
+      font-size: 20px;
+      cursor: pointer;
+    }
+    
+  }
+}
+
