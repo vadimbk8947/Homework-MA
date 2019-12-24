@@ -1,0 +1,52 @@
+.search {
+  width: 50%;
+  height: 35px;
+  background: gold;
+  padding: 5px;
+  color: #fff;
+  position: relative;
+    
+  &:before {
+    content: ''; 
+    position: absolute;
+    right: -37.5px; top: 0px;
+    border: calc(30px - 7.5px) solid transparent;
+    border-left: 15px solid gold;
+  }
+
+  &__string {
+    display: flex;
+    justify-content: center;
+
+    &-label {
+      width: 100%;
+      flex-grow: 1;
+
+      &-text {
+        width: 100%;
+      }
+    }
+
+    &-button {
+      margin-left: 5px;
+    }
+  }
+
+  &__label {
+    margin: 0;
+    position: relative;
+    
+    &-checkbox {
+      margin: 2.5px 0;
+
+    }
+
+    &-text {
+      position: absolute;
+      top:-3px;
+      width: 200px;
+
+    }
+  }
+
+}
