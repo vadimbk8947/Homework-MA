@@ -1,0 +1,54 @@
+
+.header {
+  width: 100%;
+  background-color: #fff;
+
+  &__wrap {
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    padding: 25px 0;
+
+    &-logo {
+      font-family: 'Poiret One', cursive;
+      font-size: 36px;
+      
+
+      &-company {
+        color: #ee8129;
+      }
+
+      &-name {
+        color: #3070a8;
+        font-weight: bold;
+      }
+    }
+
+    &-ul {
+      margin-top: 25px;
+      display: flex;
+      font-family: 'Open Sans', sans-serif;
+      text-transform: uppercase;
+      
+      &-li {
+
+        &-a {
+
+          color: #989898;
+          font-size: 14px;
+          margin: auto 0 auto 30px;
+          padding: 5px 5px 20.5px 5px;
+          height: 100%;
+          
+          &:hover,
+          &:focus {
+            color: #3070a8;
+            border-bottom: 2px solid #3070a8;
+          }
+        }
+      }
+    }
+  }
+}

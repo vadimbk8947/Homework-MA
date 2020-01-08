@@ -1,0 +1,31 @@
+.footer {
+  width: 100%;
+  height: 100px;
+  background-color: #3070a8;
+}
+
+.footer__wrap {
+  width: 50%;
+  margin: auto;
+}
+
+.footer__wrap-h2 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  color: #fff;
+  text-align: center;
+  line-height: 30px;
+  padding-top: 20px;
+  font-weight: 400;
+}
+
+.footer__wrap-h2-company {
+  color: #fff;
+  font-weight: 700;
+}
+
+.footer__wrap-h2-icon {
+  color: #000;
+  font-weight: 700;
+}
+/*# sourceMappingURL=footer.css.map */

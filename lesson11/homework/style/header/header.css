@@ -1,0 +1,56 @@
+.header {
+  width: 100%;
+  background-color: #fff;
+}
+
+.header__wrap {
+  width: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto;
+  padding: 25px 0;
+}
+
+.header__wrap-logo {
+  font-family: 'Poiret One', cursive;
+  font-size: 36px;
+}
+
+.header__wrap-logo-company {
+  color: #ee8129;
+}
+
+.header__wrap-logo-name {
+  color: #3070a8;
+  font-weight: bold;
+}
+
+.header__wrap-ul {
+  margin-top: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: 'Open Sans', sans-serif;
+  text-transform: uppercase;
+}
+
+.header__wrap-ul-li-a {
+  color: #989898;
+  font-size: 14px;
+  margin: auto 0 auto 30px;
+  padding: 5px 5px 20.5px 5px;
+  height: 100%;
+}
+
+.header__wrap-ul-li-a:hover, .header__wrap-ul-li-a:focus {
+  color: #3070a8;
+  border-bottom: 2px solid #3070a8;
+}
+/*# sourceMappingURL=header.css.map */
