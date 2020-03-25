@@ -1,0 +1,52 @@
+.carousel {
+  // background-color: green;
+  .container {
+    overflow: hidden;
+
+    width: 500px;
+    background-color: red;
+    margin: 0 auto;
+    ul {
+      display: flex;
+      align-items: center;
+      list-style: none;
+      background-color: #ddd;
+      position: relative;
+      width: 460px;
+      height: 160px;
+      margin: 0 auto;
+      border-radius: 20px;
+
+      li {
+        margin: 0 8px;
+
+        img {
+          display: block;
+        }
+      }
+    }
+
+    .arrow {
+      position: fixed;
+      top: 40%;
+      z-index: 1;
+      font-size: 20px;
+      margin: 0;
+      padding: 0;
+      width: 25px;
+      height: 30px;
+      cursor: pointer;
+      background-color: #ddd;
+      border-radius: 10px;
+      outline: none;
+    }
+
+    .left {
+      left: 5px;
+    }
+
+    .right {
+      right: 5px;
+    }
+  }
+}

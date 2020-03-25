@@ -1,0 +1,39 @@
+body {
+  /* margin: 0; */
+  /* padding: 0; */
+  /* font-size: 33px; */
+
+  background-color: green;
+  color: white;
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.5;
+  letter-spacing: 0.5px;
+  word-spacing: 15px;
+  /* text-decoration: line-through; */
+  text-transform: uppercase;
+  font-weight: 700;         /*bolt font*/
+  font-style: italic;       /*oblique font*/
+
+}
+
+p {
+  font-size: 12px;
+  color: yellow;
+}
+
+input {
+  background-color: red;
+}
+
+form {
+  border: solid 2px black ;
+}
+
+body form input {
+  background-color: coral;
+}
+
+body form span input {
+  background-color: darkturquoise;
+}

@@ -1,0 +1,54 @@
+.carousel .container {
+  overflow: hidden;
+  width: 500px;
+  background-color: red;
+  margin: 0 auto;
+}
+
+.carousel .container ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style: none;
+  background-color: #ddd;
+  position: relative;
+  width: 460px;
+  height: 160px;
+  margin: 0 auto;
+  border-radius: 20px;
+}
+
+.carousel .container ul li {
+  margin: 0 8px;
+}
+
+.carousel .container ul li img {
+  display: block;
+}
+
+.carousel .container .arrow {
+  position: fixed;
+  top: 40%;
+  z-index: 1;
+  font-size: 20px;
+  margin: 0;
+  padding: 0;
+  width: 25px;
+  height: 30px;
+  cursor: pointer;
+  background-color: #ddd;
+  border-radius: 10px;
+  outline: none;
+}
+
+.carousel .container .left {
+  left: 5px;
+}
+
+.carousel .container .right {
+  right: 5px;
+}
+/*# sourceMappingURL=index.css.map */

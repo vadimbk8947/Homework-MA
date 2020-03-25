@@ -1,0 +1,15 @@
+.body {
+  display: grid; 
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 100px 1fr 50px;
+  
+  .header__container, 
+  .main,
+  .footer {
+    padding: 20px;
+    background: gold;
+
+  }
+
+}
+

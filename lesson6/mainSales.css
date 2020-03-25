@@ -1,0 +1,91 @@
+.main__sales {
+  background-color: #bdbdbd;
+}
+
+.main__sales .main__sales-salesText {
+  font-size: 48px;
+  font-family: sans-serif;
+  text-align: center;
+  padding: 20px 0px 40px 0px;
+}
+
+.main__sales-items1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  padding: 0px;
+}
+
+.main__sales-items1 .main__sales-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0;
+  margin: 20px 60px 20px 20px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  width: 300px;
+  height: 420px;
+  background: #f1f1f1;
+  overflow: hidden;
+}
+
+.main__sales-items1 .main__sales-items .main__sales-figure .main__sales__img {
+  padding: 0px 70px;
+  width: 350px;
+  height: 350px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.main__sales-items1 .main__sales-items .main__sales-figcaption {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 18px;
+  position: relative;
+  left: 95px;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  width: 300px;
+  height: 60px;
+  padding: 5px 2px;
+}
+
+.main__sales-items1 .main__sales-items .main__sales-figcaption .main__sales-figcaption__after {
+  padding: 5px;
+  text-decoration: line-through;
+  -webkit-box-flex: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0;
+}
+
+.main__sales-items1 .main__sales-items .main__sales-figcaption .main__sales-figcaption__before {
+  padding: 5px;
+  font-size: 20px;
+  font-weight: bold;
+  color: red;
+  -webkit-box-flex: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0;
+}
+/*# sourceMappingURL=mainSales.css.map */

@@ -1,154 +1,197 @@
-
 .main {
-  height: 100vh;
-  padding: 0 210px;
+  width: 100%;
+  // padding: 0 15%;
   font-family: 'Playfair Display', serif;;
   color: #626262;
   font-size: 14px;
   
   .main__main-article-img {
-    position: absolute;
-    left: 5px;
-    width: 1200px;
-    padding: 20px 70px;
+    // position: absolute;
+    // left: 5px;
+    width: 90%;
+    margin: 0 5%;
+    padding: 60px 0;
+    // background: red;
   }
 
+
   &__main-article-wrap {
-    position: relative;
-    top: 630px;
+    // position: relative;
+    // top: 630px;
     // text-align: start;
+    width: 70%;
+    margin: 0 auto;
+    padding: 20px;
 
     .main__main-article-chapter {
       font-family: 'Ubuntu', sans-serif;
       text-transform: uppercase;
       font-size: 14px;
       // padding: 10px;
-      color: #626262;
+      color: rgba(62, 62, 62, 0.432);
     }
 
     .main__main-article-caption {
       font-size: 30px;
-      padding: 10px 10px 40px 0px;
+      padding: 10px 10px 30px 0px;
       color: #626262;
     }
+    
+    .main__main-article-text {
+      // width: 100vw;
+      line-height: 24px;
+      margin: 30px 0;
+    }
+    
     .main__main-article-btn {
-      position: relative;
-      top: 30px;
+      // position: relative;
+      // top: 30px;
       color: #b4ad9e;
       font-family: 'Ubuntu', sans-serif;
       text-transform: uppercase;
       font-size: 14px;
+      
+      // background: red;
     }
-
-    .main__main-article-text {
-      line-height: 24px;
-    }
-
-    .__main-article-btn {
-    }
+    
   }
 
   &__articles-wrap {
+    // display: flex;
 
     .main__articles-list  {
       display: flex;
-      flex-flow: row wrap;
       justify-content: space-between;
+      flex-flow: row wrap;
+      width: 70%;
+      margin: 0 auto;
+      // justify-content: space-between;
       // align-items: stretch;
       // padding: 0px;
   
       
       .main__articles-list-items {
         display: flex;
-        position: relative;
-        top: 750px;
+        flex-flow: column;
+        // position: relative;
+        // top: 750px;
         // padding: 20px;
-        
-        width: 420px;
-        height: 540px;
+        margin: 60px 0;
+        width: 46%;
+        // height: 100vh;
+        // margin: 0 auto;
+        // height: 540px;
         
         // background: red;
         
         
         .main__main-article-img {
-          position: relative;
-          left: 0;
+          // position: relative;
+          // left: 0;
           padding: 0;
+          margin: 0;
           object-fit: cover;
-          width: 420px;
-          height: 260px;
+          height: 300px;
+          width: 100%;
 
-          background: black;
+          // background: black;
         }
 
-        .main__main-article-wrap {
-          position: relative;
-          top: 290px;
-          left: -420px;
-          flex-basis: 100%;
+        .main__article-wrap {
+          // position: relative;
+          // top: 290px;
+          // left: -70%;
+          // width: 70%;
+          margin: 0 auto;
+          padding: 20px 0;
 
+          .main__main-article-chapter {
+            font-family: 'Ubuntu', sans-serif;
+            text-transform: uppercase;
+            font-size: 14px;
+            // padding: 10px;
+            color: rgba(62, 62, 62, 0.432);
+          }
+      
+          .main__main-article-caption {
+            font-size: 30px;
+            padding: 10px 10px 30px 0px;
+            color: #626262;
+          }
+          
           .main__main-article-text {
-            width: 420px;
+            // width: 100vw;
+            line-height: 24px;
+            margin: 20px 0;
           }
         }
 
       }
       
     }
-  // &__second-block {
-  //   margin: 0;
-  //   background: red;
-  // }
   }
 
   &__sign-up {
     display: flex;
     justify-content: center;
     align-items: center;
-    position: relative;
-    margin: 800px 0px 0 0;
-    // top: 800px;
-    left: -210px;
-    width: 1349px;
-    height: 287px;
+    flex-wrap: wrap;
+    // position: relative;
+    // margin: 80% 0 0 -31%;
+    width: 100%;
     background: #f0f0f0;
+    // z-index: 1;
 
     .main__form {
+      display: flex;
+      flex-flow: wrap;
+      justify-content: center;
       // background: red;
-      height: 125px;
-      width: 410px;
+      margin: 70px 0;
+      // background: red;
+      // height: 125px;
+      width: 27%;
+      
       border-width: 1px;
       border-bottom-style: solid;
       
       &-title {
-        padding: 0 0px 40px 3px;
+        width: 100%;
+        // margin: 0;
+        padding: 0 0px 80px 3px;
+        // margin: 0 auto;
         font-size: 30px;
         color: #333333;
         font-weight: 500;
+        // background: blue;
       }
       
       &-email {
+        margin: 0;
         // padding: 5px;
-        margin: 3px;
-        width: 360px;
-        height: 30px;
-        text-align: left;
+        // margin: 3px;
+        // width: 360px;
+        // height: 30px;
+        // text-align: left;
+        width: 80%;
         border: none;
         outline: none;
         vertical-align: middle;
         background-color: transparent;
         font-family: 'Playfair Display', serif;
+        // background: green;
         
       }
 
       &-submit {
         position: relative;
-        top: 25px;
-        left: 0px;
+        // top: 25px;
+        right: -15%;
         border: none;
         outline: none;
-        width: 40px;
-        height: 40px;
+          width: 20%;
+          // background-color: blue;
+        // height: 40px;
         background: url("../../images/sendIcon.png") no-repeat;
         cursor: pointer;
 
@@ -157,21 +200,20 @@
     
   }
 
-  section:nth-child(4) {
-    margin: 0;
-    position: relative;
-    top: -600px;
-  }
+  // section:nth-child(4) {
+  //   margin: 0;
+  //   // position: relative;
+  //   // top: -600px;
+  // }
 
   &__btn {
     display: flex;
     justify-content: center;
-    align-items: center;
-    margin: 200px;
+    // align-items: center;
+    // margin: 200px;
 
     .btn-primary {
-      width: 165px;
-      height: 60px;
+      padding: 20px 40px;
       background-color: transparent;
       border: 1px solid #626262;
       font-family: 'Playfair Display', serif;
@@ -182,4 +224,34 @@
     
   }
 }
+
+
+@media only screen and (min-width: 1824px) {
+  section:not(.main__sign-up) {
+    width: 1824px;
+    margin: 0 auto;
+    
+    .main__form {
+      width: 100px;
+    }
+  }
+
+}
+
+
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+  max-width: 320px;
+}
+
+
+
+
+
+// @media only screen and (min-width: 1680px) {
+//   main {
+//     max-width: 1680px;
+//     margin: 0 auto;
+//   }
+// }
 

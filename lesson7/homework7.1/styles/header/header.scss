@@ -1,0 +1,42 @@
+
+
+.header__container {
+  grid-column: span 12;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-grow: 1;
+  padding: 20px 60px;
+
+}
+
+.logo {
+  font-family: 'Inconsolata', monospace;
+  text-transform: uppercase;
+  font-size: 30px;
+  letter-spacing: 5px;
+  padding: 10px;
+
+}
+
+.header__section-list {
+  display: flex;
+  padding: 10px;
+
+
+
+  .header__section-list-items {
+    margin:  15px 45px;
+    padding: 5px 5px;
+    text-transform: uppercase;
+    color: #626262;
+    font-size: 14px;
+    cursor: pointer;
+
+    &:last-child {
+      padding-right: 0;
+    }
+
+  }
+
+}

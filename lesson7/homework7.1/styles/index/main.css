@@ -1,0 +1,189 @@
+.main {
+  margin: 0 20px;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 10;
+  grid-column: 2 / span 10;
+  padding: 0 210px;
+  font-family: 'Playfair Display', serif;
+  color: #626262;
+  font-size: 14px;
+}
+
+.main .main__main-article-img {
+  position: absolute;
+  left: 5px;
+  width: 100%;
+  padding: 20px 70px;
+}
+
+.main__main-article-wrap {
+  position: relative;
+  top: 630px;
+}
+
+.main__main-article-wrap .main__main-article-chapter {
+  font-family: 'Ubuntu', sans-serif;
+  text-transform: uppercase;
+  font-size: 14px;
+  color: rgba(62, 62, 62, 0.432);
+}
+
+.main__main-article-wrap .main__main-article-caption {
+  font-size: 30px;
+  padding: 10px 10px 40px 0px;
+  color: #626262;
+}
+
+.main__main-article-wrap .main__main-article-btn {
+  position: relative;
+  top: 30px;
+  color: #b4ad9e;
+  font-family: 'Ubuntu', sans-serif;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+.main__main-article-wrap .main__main-article-text {
+  line-height: 24px;
+}
+
+.main__articles-wrap .main__articles-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.main__articles-wrap .main__articles-list .main__articles-list-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  top: 750px;
+  width: 420px;
+  height: 540px;
+}
+
+.main__articles-wrap .main__articles-list .main__articles-list-items .main__main-article-img {
+  position: relative;
+  left: 0;
+  padding: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 420px;
+  height: 260px;
+  background: black;
+}
+
+.main__articles-wrap .main__articles-list .main__articles-list-items .main__main-article-wrap {
+  position: relative;
+  top: 290px;
+  left: -420px;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+}
+
+.main__articles-wrap .main__articles-list .main__articles-list-items .main__main-article-wrap .main__main-article-text {
+  width: 420px;
+}
+
+.main__sign-up {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #b03532;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 12;
+  grid-column: 1 / span 12;
+  -ms-grid-row: 4;
+  -ms-grid-row-span: 6;
+  grid-row: 4 / span 6;
+  position: relative;
+  margin: 800px 0px 0 0;
+  left: -210px;
+  width: 1349px;
+  height: 287px;
+  background: #f0f0f0;
+  z-index: 1;
+}
+
+.main__sign-up .main__form {
+  height: 125px;
+  width: 410px;
+  border-width: 1px;
+  border-bottom-style: solid;
+}
+
+.main__sign-up .main__form-title {
+  padding: 0 0px 40px 3px;
+  font-size: 30px;
+  color: #333333;
+  font-weight: 500;
+}
+
+.main__sign-up .main__form-email {
+  margin: 3px;
+  width: 360px;
+  height: 30px;
+  text-align: left;
+  border: none;
+  outline: none;
+  vertical-align: middle;
+  background-color: transparent;
+  font-family: 'Playfair Display', serif;
+}
+
+.main__sign-up .main__form-submit {
+  position: relative;
+  top: 25px;
+  left: 0px;
+  border: none;
+  outline: none;
+  width: 40px;
+  height: 40px;
+  background: url("../../images/sendIcon.png") no-repeat;
+  cursor: pointer;
+}
+
+.main section:nth-child(4) {
+  margin: 0;
+  position: relative;
+  top: -600px;
+}
+
+.main__btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 200px;
+}
+
+.main__btn .btn-primary {
+  width: 165px;
+  height: 60px;
+  background-color: transparent;
+  border: 1px solid #626262;
+  font-family: 'Playfair Display', serif;
+  color: #626262;
+  font-size: 20px;
+  cursor: pointer;
+}
+/*# sourceMappingURL=main.css.map */

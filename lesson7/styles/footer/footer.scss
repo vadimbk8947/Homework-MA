@@ -1,0 +1,48 @@
+.footer {
+  margin-top: 100px;
+  padding: 20px 0;
+  // width: 100%;
+  // height: 90px;
+  background-color: rgb(240, 240, 240);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .footer__rules {
+    margin-left: 130px;
+  }
+
+  .footer__socials {
+    text-align: right;
+    margin-right: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    // fill: #626262;
+
+
+    span {
+      font-size: 14px;
+      font-family: "Playfair Display";
+    }
+  }
+
+  a {
+    margin: 10px;
+    color: #000;
+    font-size: 14px;
+    font-family: "Playfair Display";
+    text-align: center;
+    // fill: #626262;
+    
+    svg {
+      width: 20px;
+      height: 20px;
+      // fill: #626262;
+    }
+
+    path {
+      fill: #626262;
+    }
+  }
+}

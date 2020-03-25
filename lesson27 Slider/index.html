@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Slider</title>
+
+</head>
+
+<body>
+  <div id="root" style="width: 640px; height: 480px; margin: auto;"></div>
+  <script src="./index.js"></script>
+
+  <script>
+    const slider = new Slider({
+      refs: [
+        './img/1.jpg',
+        './img/2.jpg',
+        './img/3.jpg',
+        './img/4.jpg',
+        './img/5.jpg',
+        './img/6.jpeg',
+      ],
+      acceptorSelector: '#root'
+    });
+
+    slider.render();
+  </script>
+</body>
+
+</html>

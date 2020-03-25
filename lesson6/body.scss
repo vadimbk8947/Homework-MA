@@ -1,0 +1,32 @@
+body {
+  display: grid;
+  grid-template-areas:
+  "footer footer footer"
+  "main main main"
+  "header header header";  
+  grid-template-rows: 60px 1fr 60px;
+  grid-template-columns: 20% 1fr 10%;
+  grid-gap: 10px;
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+
+
+  header, footer, main {
+    padding: 20px;
+    // background: gold;
+  }
+
+  .header {
+    grid-area: header;
+  }
+
+  .main {
+    grid-area: main;
+  }
+
+  .footer {
+    grid-area: footer;
+  }
+
+}

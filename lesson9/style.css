@@ -1,0 +1,215 @@
+.checkbox-wrap {
+  background-color: #eee;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.checkbox-wrap label {
+  position: relative;
+  cursor: pointer;
+}
+
+.checkbox-wrap label .checkbox {
+  opacity: 0;
+  height: 0;
+  width: 0;
+  overflow: hidden;
+}
+
+.checkbox-wrap label .checkbox:checked + .checkbox-hidden::after {
+  content: '';
+  display: block;
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+  position: absolute;
+  left: 0px;
+  top: 1px;
+  background-color: blue;
+}
+
+.checkbox-wrap label .checkbox-hidden::before {
+  content: '';
+  display: block;
+  height: 20px;
+  width: 20px;
+  border: solid 2px blue;
+  background-color: transparent;
+  border-radius: 50%;
+  position: absolute;
+  left: -4px;
+  top: -3px;
+}
+
+.button-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.button-wrap .btn {
+  height: 35px;
+  width: 200px;
+  line-height: 1;
+  cursor: pointer;
+  margin: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 4px;
+  border: solid 2px aqua;
+  color: aqua;
+  outline: none;
+  -webkit-transition: 0.125s all;
+  transition: 0.125s all;
+  -webkit-box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.2);
+}
+
+.button-wrap .btn:active {
+  border: solid #140083;
+  color: #140083;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  -webkit-transform: translateY(-1.2px);
+          transform: translateY(-1.2px);
+}
+
+.transform-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #58c458;
+}
+
+.transform-wrap span {
+  margin: 10px;
+  display: block;
+  width: calc(16.666666% - 20px);
+  background-color: #ce9f49;
+  height: 50px;
+  cursor: pointer;
+  -webkit-transition: 0.2s all;
+  transition: 0.2s all;
+}
+
+.transform-wrap span:first-child:hover {
+  -webkit-transform: translate3d(-15px, 10px, -2px);
+          transform: translate3d(-15px, 10px, -2px);
+}
+
+.transform-wrap span:last-of-type:hover {
+  -webkit-transform: rotateX(30deg);
+          transform: rotateX(30deg);
+}
+
+.transform-wrap span:nth-child(2):hover {
+  -webkit-transform: skew(45deg);
+          transform: skew(45deg);
+}
+
+.transform-wrap span:nth-child(2) + span:hover {
+  -webkit-animation: scaler 0.9s linear 0.08s infinite;
+          animation: scaler 0.9s linear 0.08s infinite;
+}
+
+.transform-wrap span:nth-child(4):hover {
+  -webkit-animation: rotate 0.9s linear 0.08s infinite;
+          animation: rotate 0.9s linear 0.08s infinite;
+}
+
+.articles {
+  background-color: #bdbdbd;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.articles span {
+  background-color: red;
+  width: 200px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+@-webkit-keyframes scaler {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes scaler {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@-webkit-keyframes rotate {
+  0%, 20%, 40%, 60%, 80, 100% {
+    -webkit-transform: rotateX(-15deg);
+            transform: rotateX(-15deg);
+  }
+  10%, 30%, 50%, 70%, 90% {
+    -webkit-transform: rotateX(15deg);
+            transform: rotateX(15deg);
+  }
+}
+
+@keyframes rotate {
+  0%, 20%, 40%, 60%, 80, 100% {
+    -webkit-transform: rotateX(-15deg);
+            transform: rotateX(-15deg);
+  }
+  10%, 30%, 50%, 70%, 90% {
+    -webkit-transform: rotateX(15deg);
+            transform: rotateX(15deg);
+  }
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,3 +1,8 @@
+@charset "UTF-8";
+body {
+  height: 100vh;
+}
+
 .header__container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -11,7 +16,9 @@
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
-  padding: 20px 60px;
+  padding: 20px 0;
+  width: 90%;
+  margin: 0 auto;
 }
 
 .logo {
@@ -19,24 +26,45 @@
   text-transform: uppercase;
   font-size: 30px;
   letter-spacing: 5px;
-  padding: 10px;
+  padding: 10px 10px 10px 0;
 }
 
 .header__section-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 10px;
 }
 
 .header__section-list .header__section-list-items {
-  padding: 20px 50px;
+  margin: 15px 45px;
+  padding: 15px 0;
   text-transform: uppercase;
   color: #626262;
   font-size: 14px;
+  cursor: pointer;
 }
 
 .header__section-list .header__section-list-items:last-child {
   padding-right: 0;
+  margin-right: 0;
+}
+
+@media only screen and (min-width: 1824px) {
+  .header__container {
+    width: 1650px;
+  }
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  .header__container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    /* Выравнивание элементов шапки с начала (по левому краю). */
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
 }
 /*# sourceMappingURL=header.css.map */

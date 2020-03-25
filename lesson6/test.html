@@ -1,0 +1,51 @@
+<!doctype html>
+<title>Example</title>
+<style>
+body {
+display: grid;
+grid-template-areas:
+"header header header"
+"nav article ads"
+"footer footer footer";
+grid-template-rows: 60px 1fr 60px;
+grid-template-columns: 20% 1fr 15%;
+grid-gap: 10px;
+height: 100vh;
+margin: 0;
+}
+header, footer, article, nav, div {
+padding: 20px;
+/* background: gold; */
+}
+#pageHeader {
+grid-area: header;
+}
+#pageFooter {
+grid-area: footer;
+}
+#mainArticle {
+grid-area: article;
+}
+#mainNav {
+grid-area: nav;
+}
+#siteAds {
+grid-area: ads;
+}
+</style>
+<body>
+<header id="pageHeader">Header Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et, nam in provident fugit doloremque nihil sit ea repudiandae ratione esse reiciendis vel voluptatem hic facere dolorem adipisci illo at blanditiis?
+Iusto deleniti voluptatem illo voluptas minus impedit repellendus dolorum, ratione ullam! Excepturi explicabo id odio provident, ipsam, iusto blanditiis nesciunt officiis omnis in animi laudantium deleniti magnam. Inventore, minima deleniti?
+Veniam sequi mollitia architecto? Architecto, quam doloremque, repellat veniam molestiae molestias distinctio non tenetur aspernatur omnis consequuntur ullam cumque libero quia, corrupti adipisci autem delectus perferendis fuga. Optio, fuga ex?
+Sapiente saepe nesciunt magnam reiciendis fuga natus, inventore necessitatibus a et consequuntur distinctio iusto repudiandae maxime voluptatem? Delectus sint iusto nam architecto quae, temporibus vitae aspernatur dicta corrupti facere voluptate!
+Hic quos blanditiis alias officiis debitis molestiae esse ratione soluta pariatur quo necessitatibus exercitationem inventore iusto minus, enim consectetur veniam voluptas fugiat. Quas qui excepturi sequi nostrum, quibusdam accusantium dolor?
+Voluptatibus, doloribus ut. Ad voluptas tenetur ex numquam reiciendis, exercitationem vitae architecto eveniet explicabo, voluptates, facilis officia? Et dolorum nostrum illum, assumenda repellendus quidem commodi saepe inventore sunt, ullam expedita.
+A iure natus doloribus inventore fugiat eum amet itaque magnam autem et, aut, quo odio rem aperiam vero aliquid soluta neque voluptatem! Quaerat ipsam esse blanditiis harum, dolor tenetur ipsa!
+Libero atque, totam ab dolor pariatur minus sapiente corrupti officia iure ipsam, corporis, omnis alias. Rerum dolorum dolorem excepturi soluta, perferendis velit. Labore asperiores, est fugit quidem placeat dicta illum.
+Voluptatem consequatur magni quidem esse debitis, tempora atque expedita inventore fugiat, obcaecati animi deleniti sapiente odio voluptates mollitia? Pariatur, minus? Saepe, ut. Quidem nemo quaerat expedita. Minima minus dolor tempora.
+Accusamus, suscipit atque illo aperiam magnam sit aliquam adipisci perspiciatis quas enim! Iste ab libero quos. Perspiciatis doloribus, sint commodi doloremque numquam ipsa sequi harum culpa blanditiis eum vitae qui?</header>
+<article id="mainArticle">Article</article>
+<nav id="mainNav">Nav</nav>
+<div id="siteAds">Ads</div>
+<footer id="pageFooter">Footer</footer>
+</body>

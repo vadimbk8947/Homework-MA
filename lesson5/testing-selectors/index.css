@@ -1,0 +1,35 @@
+body {
+  width: 224px;
+  margin: 50px auto;
+}
+
+.img {
+  width: 200px;
+  height: 300px;
+}
+
+.box {
+  position: relative;
+  box-shadow: 1px 2px 4px rgba(0, 0, 0, .5) ;
+  padding: 10px;
+  background: white;
+} 
+
+.box img {
+  max-width: 100%;
+  border: 1px inset #8a4419;
+}
+
+.box:after {
+  content: '';
+  box-shadow: 100px 0 10px 20px rgba(0, 0, 0, .3);
+  position: absolute;
+  width: 50%;
+  bottom: 20px;
+  right: 90px;
+  z-index: -1;
+  transform: skew(-40deg);
+
+
+}
+

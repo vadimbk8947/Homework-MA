@@ -15,7 +15,7 @@ body {
 }
 
 .navigation-list__btn {
-  display: block;
+  display: flex;
   height: 20px;
   width: auto;
   padding: 20px 15px 15px 15px;
@@ -43,9 +43,9 @@ body {
 
 }
 
-.navigation-list-travel_btn {
-  display: block;
-  position: relative;
+.navigation-list-travel_item {
+  display: flex;
+  position: relaative;
   background-color: rgb(241, 237, 234);
   font-size: 14px;
   color: rgb(150, 167, 180);
@@ -53,7 +53,7 @@ body {
   padding: 14px 25px 14px 25px;
 }
 
-.navigation-list-travel_btn:hover {
+.navigation-list-travel_item:hover {
   background-color: rgb(201, 197, 204);
 
 }
