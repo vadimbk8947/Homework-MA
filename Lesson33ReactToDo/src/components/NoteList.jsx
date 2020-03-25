@@ -1,9 +1,8 @@
 import React from "react";
-
 import NotesItem from "./NotesItem";
-import "./NotesList.scss";
+import scss from "./NoteList.scss";
 
-const NotesList = props => {
+export default function NoteList(props) {
   return (
     <ul className="notes__list">
       {props.list.length
@@ -11,6 +10,4 @@ const NotesList = props => {
         : null}
     </ul>
   );
-};
-
-export default NotesList;
+}

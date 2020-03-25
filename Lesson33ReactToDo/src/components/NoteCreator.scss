@@ -1,6 +1,6 @@
 .form {
   border: solid 1px #888;
-  border-radius: 4px;
+  border-radius: 4px;;
   background-color: #eee;
   width: 200px;
   display: flex;
@@ -20,7 +20,7 @@
     display: flex;
     align-items: center;
     margin: 15px 0;
-
+    
     & input {
       cursor: pointer;
     }

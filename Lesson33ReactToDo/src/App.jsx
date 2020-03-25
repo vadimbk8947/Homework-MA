@@ -1,14 +1,16 @@
 import React, { useState } from "react";
-import "./App.css";
+
 import NoteCreator from "./components/NoteCreator";
 import NotesList from "./components/NotesList";
+
+import "./App.css";
 
 function App() {
   const [notes, setNotes] = useState([]);
 
-  const addNewNote = newNote => setNotes([...notes, newNote]);
+  const addNewNote = (newNote) => setNotes([...notes, newNote]);
 
-  const sortByPriority = isUp =>
+  const sortByPriority = (isUp) =>
     setNotes([
       ...notes.sort((a, b) => {
         if (isUp) {
@@ -19,17 +21,19 @@ function App() {
     ]);
 
   return (
-    <div className="App">
+    <div className='App'>
       <NoteCreator addNewNote={addNewNote} />
 
       <NotesList list={notes} />
 
-      <button onClick={() => sortByPriority(true)} className="sort-up">
-        Hight
-      </button>
-      <button onClick={() => sortByPriority()} className="sort-down">
-        Low
-      </button>
+      <div className='priority-wrap'>
+        <button onClick={() => sortByPriority(true)} className='sort-up'>
+          High
+        </button>
+        <button onClick={() => sortByPriority()} className='sort-down'>
+          Low
+        </button>
+      </div>
     </div>
   );
 }
