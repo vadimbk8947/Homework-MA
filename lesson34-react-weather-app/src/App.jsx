@@ -1,9 +1,10 @@
 import React from "react";
+
 import DataManager from "./containers/DataManager/DataManager";
 
 function App() {
   return (
-    <div className="App">
+    <div className='App'>
       <DataManager />
     </div>
   );

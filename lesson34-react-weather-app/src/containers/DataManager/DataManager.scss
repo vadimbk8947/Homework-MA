@@ -1,0 +1,88 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Titillium Web", sans-serif;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  background-color: rgb(166, 239, 252);
+  height: 50px;
+
+  &__menu-btn {
+    margin-left: auto;
+    margin-right: 10px;
+    height: 30px;
+    width: 35px;
+    background-color: rgba(248, 255, 182, 0.973);
+    border: 1px solid rgba(248, 255, 182, 0.973);
+    border-radius: 4px;
+    cursor: pointer;
+
+    &-link {
+      display: block;
+      width: 35px;
+      height: 30px;
+      position: relative;
+
+      span,
+      span::before,
+      span::after {
+        position: absolute;
+        top: 50%;
+        margin-top: -1px;
+        left: 50%;
+        margin-left: -10px;
+        width: 20px;
+        height: 2px;
+        background-color: #000;
+      }
+      span::before,
+      span::after {
+        content: "";
+        display: block;
+        transition: 0.2s;
+      }
+      span::before {
+        transform: translateY(-5px);
+      }
+      span::after {
+        transform: translateY(5px);
+      }
+    }
+    &:link,
+    &:visited {
+      text-transform: uppercase;
+      text-decoration: none;
+      padding: 15px 40px;
+      display: inline-block;
+      border-radius: 100px;
+      transition: all 0.2s;
+      position: absolute;
+    }
+
+    &:hover {
+      background-color: rgb(239, 253, 112);
+      transform: translateY(-1px);
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    &:active {
+      transform: translateY(0px);
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    }
+  }
+
+  .menu-btn__active span:before {
+    transform: rotate(-35deg);
+    width: 10px;
+    transform-origin: left bottom;
+  }
+
+  .menu-btn__active span:after {
+    transform: rotate(35deg);
+    width: 10px;
+    transform-origin: left top;
+  }
+}
