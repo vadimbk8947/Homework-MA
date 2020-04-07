@@ -3,6 +3,7 @@ import Carousel from "react-bootstrap/Carousel";
 import winterForestImg from "../assets/winterForest.jpg";
 import darkForestImg from "../assets/darkForest.jpg";
 import FogForestImg from "../assets/fogForest.jpg";
+import "./CarouselBox.scss";
 
 export default class CarouselBox extends Component {
   render() {
@@ -10,11 +11,11 @@ export default class CarouselBox extends Component {
       <Carousel>
         <Carousel.Item>
           <img
-            className="d-block w-100"
+            className="d-block img"
             src={winterForestImg}
             alt="winterForest"
           />
-          <Carousel.Caption>
+          <Carousel.Caption className="text">
             <h3>winterForestImg</h3>
             <p>
               Lorem ipsum dolor sit, amet consectetur adipisicing elit.
@@ -27,11 +28,11 @@ export default class CarouselBox extends Component {
 
         <Carousel.Item>
           <img
-            className="d-block w-100"
+            className="d-block img"
             src={darkForestImg}
             alt="darkForestImg"
           />
-          <Carousel.Caption>
+          <Carousel.Caption className="text">
             <h3>Dark ForestImg</h3>
             <p>
               Lorem ipsum dolor sit, amet consectetur adipisicing elit.
@@ -43,12 +44,8 @@ export default class CarouselBox extends Component {
         </Carousel.Item>
 
         <Carousel.Item>
-          <img
-            className="d-block w-100"
-            src={FogForestImg}
-            alt="FogForestImg"
-          />
-          <Carousel.Caption>
+          <img className="d-block img" src={FogForestImg} alt="FogForestImg" />
+          <Carousel.Caption className="text">
             <h3>FogForestImg</h3>
             <p>
               Lorem ipsum dolor sit, amet consectetur adipisicing elit.

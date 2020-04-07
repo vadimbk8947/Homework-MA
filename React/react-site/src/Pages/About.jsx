@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Container, Tab, Nav, Col, Row } from "react-bootstrap";
+import "./About.scss";
 
 export default class About extends Component {
   render() {
@@ -35,8 +36,8 @@ export default class About extends Component {
               <Tab.Content className="mt-3">
                 <Tab.Pane eventKey="first">
                   <img
+                    className="img"
                     src="https://cms-assets.tutsplus.com/uploads/users/30/posts/32053/image/freebiesupply.jpg"
-                    alt="hui"
                   />
                   <p>
                     Lorem ipsum dolor sit amet consectetur, adipisicing elit.
@@ -47,7 +48,10 @@ export default class About extends Component {
                 </Tab.Pane>
 
                 <Tab.Pane eventKey="second">
-                  <img src="https://www.hexacta.com/wp-content/uploads/2018/07/5-clues-to-keep-your-software-development-team-productive-11.jpg" />
+                  <img
+                    className="img"
+                    src="https://www.hexacta.com/wp-content/uploads/2018/07/5-clues-to-keep-your-software-development-team-productive-11.jpg"
+                  />
                   <p>
                     Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                     Pariatur aspernatur fuga non officiis tempore dolorem, natus
@@ -64,8 +68,8 @@ export default class About extends Component {
 
                 <Tab.Pane eventKey="third">
                   <img
+                    className="img"
                     src="https://www.topsinfosolutions.com/wp-content/uploads/2018/12/2.png"
-                    alt=""
                   />
                   <p>
                     Lorem ipsum dolor sit amet consectetur, adipisicing elit.
@@ -77,8 +81,8 @@ export default class About extends Component {
 
                 <Tab.Pane eventKey="fourth">
                   <img
+                    className="img"
                     src="https://devtechnosys.com/images/ckeditior/images/xweb-development-frameworks.png.pagespeed.ic.MmmnHiDEy7.png"
-                    alt=""
                   />
                   <p>
                     Lorem ipsum dolor sit amet consectetur, adipisicing elit.
@@ -89,7 +93,10 @@ export default class About extends Component {
                 </Tab.Pane>
 
                 <Tab.Pane eventKey="fifth">
-                  <img src="https://lh3.googleusercontent.com/proxy/OVc4GqjCcdEM-P6nl1U-p1pELhsnsxZvfSo8VnEtcj-8mj0_k49FZhOrIL79C4Op_q9_83MIH6TB5IGm9nIRyadnmKHVj1rwF9uVh3DHmADjd3FSD4_E2-ITmZPTROIpwh7qTDBqfGF3LTByArC0olnF3HXITFdlEJvmMuSq" />
+                  <img
+                    className="img"
+                    src="https://hackr.io/blog/top-javascript-libraries/thumbnail/large"
+                  />
                   <p>
                     Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                     Pariatur aspernatur fuga non officiis tempore dolorem, natus
