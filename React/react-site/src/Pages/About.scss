@@ -1,4 +1,15 @@
-.img {
+.about-img {
   margin: 0 auto;
   width: 700px;
+}
+
+@media screen and (max-width: 750px) {
+  .about-img {
+    display: flex;
+    max-width: 320px;
+  }
+
+  .tab-content {
+    text-align: justify;
+  }
 }

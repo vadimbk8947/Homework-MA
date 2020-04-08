@@ -11,7 +11,7 @@ export default class CarouselBox extends Component {
       <Carousel>
         <Carousel.Item>
           <img
-            className="d-block img"
+            className="d-block carousel-img"
             src={winterForestImg}
             alt="winterForest"
           />
@@ -28,7 +28,7 @@ export default class CarouselBox extends Component {
 
         <Carousel.Item>
           <img
-            className="d-block img"
+            className="d-block carousel-img"
             src={darkForestImg}
             alt="darkForestImg"
           />
@@ -44,6 +44,7 @@ export default class CarouselBox extends Component {
         </Carousel.Item>
 
         <Carousel.Item>
+          carousel-{" "}
           <img className="d-block img" src={FogForestImg} alt="FogForestImg" />
           <Carousel.Caption className="text">
             <h3>FogForestImg</h3>

@@ -13,9 +13,9 @@
     flex-flow: column;
 
     &__title {
-      margin: 20px 0;
+      margin: 15px 0;
       text-align: center;
-      font-size: 24px;
+      font-size: 32px;
       text-transform: uppercase;
       font-weight: 500;
     }
@@ -45,7 +45,7 @@
     &__label-remember {
       margin: 5px 0;
       display: flex;
-      align-items: flex-end;
+      align-items: center;
     }
 
     &__submit {
@@ -56,7 +56,7 @@
       background-color: rgb(252, 249, 117);
       border: none;
       border-radius: 10px;
-      font-size: 14px;
+      font-size: 18px;
 
       &:hover {
         background-color: rgb(252, 248, 58);

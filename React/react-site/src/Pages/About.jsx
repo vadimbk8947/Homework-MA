@@ -33,10 +33,10 @@ export default class About extends Component {
             </Col>
 
             <Col sm={9}>
-              <Tab.Content className="mt-3">
+              <Tab.Content className="mt-3 tab-content">
                 <Tab.Pane eventKey="first">
                   <img
-                    className="img"
+                    className="about-img"
                     src="https://cms-assets.tutsplus.com/uploads/users/30/posts/32053/image/freebiesupply.jpg"
                   />
                   <p>
@@ -49,7 +49,7 @@ export default class About extends Component {
 
                 <Tab.Pane eventKey="second">
                   <img
-                    className="img"
+                    className="about-img"
                     src="https://www.hexacta.com/wp-content/uploads/2018/07/5-clues-to-keep-your-software-development-team-productive-11.jpg"
                   />
                   <p>
@@ -68,7 +68,7 @@ export default class About extends Component {
 
                 <Tab.Pane eventKey="third">
                   <img
-                    className="img"
+                    className="about-img"
                     src="https://www.topsinfosolutions.com/wp-content/uploads/2018/12/2.png"
                   />
                   <p>
@@ -81,7 +81,7 @@ export default class About extends Component {
 
                 <Tab.Pane eventKey="fourth">
                   <img
-                    className="img"
+                    className="about-img"
                     src="https://devtechnosys.com/images/ckeditior/images/xweb-development-frameworks.png.pagespeed.ic.MmmnHiDEy7.png"
                   />
                   <p>
@@ -94,7 +94,7 @@ export default class About extends Component {
 
                 <Tab.Pane eventKey="fifth">
                   <img
-                    className="img"
+                    className="about-img"
                     src="https://hackr.io/blog/top-javascript-libraries/thumbnail/large"
                   />
                   <p>
