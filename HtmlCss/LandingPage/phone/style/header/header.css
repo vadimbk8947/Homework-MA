@@ -1,0 +1,80 @@
+body {
+  height: 100vh;
+}
+
+body .header__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #223047;
+  height: 70px;
+  font-family: "Dosis", sans-serif;
+  font-size: 14px;
+  border-bottom: solid 1px #4e596c;
+}
+
+body .header__container-div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 70%;
+  margin: 0 auto;
+}
+
+body .header__container .logo {
+  width: 100px;
+  cursor: pointer;
+}
+
+body .header__container-section__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body .header__container-section__list-items-btn {
+  margin: 15px;
+  color: #fff;
+}
+
+body .header__container-section__list-items-btn img {
+  margin: auto 5px;
+}
+
+body .header__container-section__list-items__home-list {
+  display: none;
+}
+
+body .header__container-btn__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body .header__container-btn__list-items__btn {
+  background-color: #00fff0;
+  width: 135px;
+  height: 40px;
+  border-radius: 6px;
+  color: #233148;
+  outline: none;
+  cursor: pointer;
+}
+
+body .header__container-btn__list-items__menu {
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  border: solid 1px transparent;
+  border-radius: 4px;
+  padding: 0.5em 1em;
+  outline: none;
+  cursor: pointer;
+}
+/*# sourceMappingURL=header.css.map */

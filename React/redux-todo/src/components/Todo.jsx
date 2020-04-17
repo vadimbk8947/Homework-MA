@@ -1,12 +1,10 @@
 import React from "react";
 
-export default function Todo({ onClick, completed, text }) {
+export default function Todo({ text, onClick, completed }) {
   return (
     <li
       onClick={onClick}
-      style={{
-        textDecoration: completed ? "line-through" : "none",
-      }}
+      style={{ textDecoration: completed ? "line-through" : "none" }}
     >
       {text}
     </li>

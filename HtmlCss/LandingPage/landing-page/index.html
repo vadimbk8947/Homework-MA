@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="./style/reset.css" />
+    <link rel="stylesheet" href="./style/header/header.css" />
+
+    <link
+      href="//db.onlinewebfonts.com/c/1dc8ecd8056a5ea7aa7de1db42b5b639?family=Gilroy"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="logo">
+        <img src="./assets/logo.png" class="logo__img" />
+      </div>
+
+      <div class="nav">
+        <ul class="nav__bar">
+          <li class="nav__bar-item">
+            <div class="sub-nav">
+              <button class="sub-nav-btn">
+                Home
+              </button>
+
+              <div class="sub-nav-content">
+                <div class="sub-nav-content__first">
+                  <h4>Submenu 01</h5>
+                  <a href="#">Excepteur sint</a>
+                  <a href="#">Occaecat cupidatat</a>
+                </div>
+
+                <div class="sub-nav-content__second">
+                 <h4>Submenu 02</h5>
+                  <a href="#">Adipisci velit</a>
+                  <a href="#">Magnam aliquam</a>
+                  <a href="#">Error</a>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li class="nav__bar-item"><a href="#">About us</a></li>
+          <li class="nav__bar-item"><a href="#">Our news</a></li>
+          <li class="nav__bar-item"><a href="#">Blog</a></li>
+          <li class="nav__bar-item"><a href="#">Contacts</a></li>
+          <li class="nav__bar-item"><a href="#">Faq</a></li>
+        </ul>
+
+        <ul class="nav__sign">
+          <li class="nav__sign-item">Sign in</li>
+          <li class="nav__sign-item">Registration</li>
+        </ul>
+      </div>
+
+      <div class="choose-language">
+        <select name="English" class="choose-language__select">
+          <option value="1" class="choose-language__select-option" selected
+            >English</option
+          >
+          <option value="1" class="choose-language__select-option"
+            >German</option
+          >
+          <option value="1" class="choose-language__select-option"
+            >French</option
+          >
+          <option value="1" class="choose-language__select-option"
+            >Russian</option
+          >
+        </select>
+      </div>
+
+
+      <nav role='navigation'>
+       <div id="menuToggle">
+         <input type="checkbox" />
+
+         <span></span>
+         <span></span>
+         <span></span>
+
+         <ul id="menu">
+
+           <li>
+            <div class="choose-language">
+             <select name="English" class="choose-language__select">
+               <option value="1" class="choose-language__select-option" selected
+                 >English</option
+               >
+               <option value="1" class="choose-language__select-option"
+                 >German</option
+               >
+               <option value="1" class="choose-language__select-option"
+                 >French</option
+               >
+               <option value="1" class="choose-language__select-option"
+                 >Russian</option
+               >
+             </select>
+           </div>
+           </li>
+
+           <li class="list">LOG IN</li>
+           <li class="list submenu">HOME</li>
+
+           <li class="submenu-list">            
+            <ul>
+             <li>Submenu 01</li>
+             <li>Excepteur sint</li>
+             <li>Occaecat cupidatat</li>
+             <li>Submenu 02</li>
+             <li>Adipisci velit</li>
+             <li>Magnam aliquam</li>
+             <li>Error</li>
+            </ul>
+           </li>
+           
+           <li class="list">ABOUT US</li>
+           <li class="list">OUR NEWS</li>
+           <li class="list">BLOG</li>
+
+           <li class="list">CONTACTS</li>
+
+           <li class="list">FAQ</li>
+
+         </ul>
+       </div>
+     </nav>
+    </header>
+  </body>
+</html>

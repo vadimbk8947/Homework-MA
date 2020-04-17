@@ -1,6 +1,6 @@
 import React from "react";
+import { addTodo } from "../store/actions/actions";
 import { connect } from "react-redux";
-import { addTodo } from "../actions/index";
 
 function AddTodo({ dispatch }) {
   let input;
@@ -18,7 +18,7 @@ function AddTodo({ dispatch }) {
         }}
       >
         <input type="text" ref={(elem) => (input = elem)} />
-        <button>Add Todo</button>
+        <button>Create todo</button>
       </form>
     </div>
   );
