@@ -5,10 +5,13 @@
   text-decoration: none;
   color: black;
   font-size: 100%;
-
 }
 
-ul, ol {
+body {
+  background-color: #171717;
+}
+
+ul,
+ol {
   list-style: none;
 }
-
