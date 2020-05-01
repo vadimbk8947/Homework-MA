@@ -6,6 +6,7 @@
 
     <link rel="stylesheet" href="./style/reset.css" />
     <link rel="stylesheet" href="./style/header/header.css" />
+    <link rel="stylesheet" href="./style/main/main.css" />
 
     <link
       href="//db.onlinewebfonts.com/c/1dc8ecd8056a5ea7aa7de1db42b5b639?family=Gilroy"
@@ -21,7 +22,7 @@
         <img src="./assets/logo.png" class="logo__img" />
       </div>
 
-      <div class="nav">
+      <nav class="nav">
         <ul class="nav__bar">
           <li class="nav__bar-item">
             <div class="sub-nav">
@@ -37,7 +38,7 @@
                 </div>
 
                 <div class="sub-nav-content__second">
-                 <h4>Submenu 02</h4>
+                  <h4>Submenu 02</h4>
                   <a href="#">Adipisci velit</a>
                   <a href="#">Magnam aliquam</a>
                   <a href="#">Error</a>
@@ -57,7 +58,7 @@
           <li class="nav__sign-item">Sign in</li>
           <li class="nav__sign-item">Registration</li>
         </ul>
-      </div>
+      </nav>
 
       <div class="choose-language">
         <select name="English" class="choose-language__select">
@@ -76,9 +77,9 @@
         </select>
       </div>
 
-        <div class="menu-icon-wrapper">
-          <div class="menu-icon"></div>
-  
+      <div class="menu-icon-wrapper">
+        <div class="menu-icon"></div>
+
         <div class="menu-list-wrapper">
           <ul class="menu-list">
             <li class="menu-list__select">
@@ -98,7 +99,9 @@
               </select>
             </li>
 
-            <li class="menu-list__item"><a class="menu-list__item-link" href="#">LOG IN</a></li>
+            <li class="menu-list__item">
+              <a class="menu-list__item-link" href="#">LOG IN</a>
+            </li>
             <li class="menu-list__item">
               <a class="menu-list__item-link" href="#">HOME</a>
               <ul class="menu-list__item-submenu">
@@ -112,20 +115,99 @@
               </ul>
             </li>
 
-            <li class="menu-list__item"><a class="menu-list__item-link" href="#">ABOUT US</a></li>
-            <li class="menu-list__item"><a class="menu-list__item-link" href="#">OUR NEWS</a></li>
-            <li class="menu-list__item"><a class="menu-list__item-link" href="#">BLOG</a></li>
-            <li class="menu-list__item"><a class="menu-list__item-link" href="#">CONTACTS</a></li>
-            <li class="menu-list__item"><a class="menu-list__item-link" href="#">FAQ</a></li>
+            <li class="menu-list__item">
+              <a class="menu-list__item-link" href="#">ABOUT US</a>
+            </li>
+            <li class="menu-list__item">
+              <a class="menu-list__item-link" href="#">OUR NEWS</a>
+            </li>
+            <li class="menu-list__item">
+              <a class="menu-list__item-link" href="#">BLOG</a>
+            </li>
+            <li class="menu-list__item">
+              <a class="menu-list__item-link" href="#">CONTACTS</a>
+            </li>
+            <li class="menu-list__item">
+              <a class="menu-list__item-link" href="#">FAQ</a>
+            </li>
           </ul>
         </div>
       </div>
-  
-      </div>
-  
-
     </header>
 
+    <main class="main">
+      <section class="carousel">
+        <div class="carousel__bg"></div>
+        <div class="carousel__wrapper">
+          <h3 class="carousel__wrapper-title active">
+            Sed ut perspiciatis unde omnis iste natus error 5000
+          </h3>
+          <h3 class="carousel__wrapper-title">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+          </h3>
+          <h3 class="carousel__wrapper-title">
+            ssdfsdfsfsdfsfsdfklsdm as fmsdlk ml kmsdflsadkflksdfksdf
+          </h3>
+          <h3 class="carousel__wrapper-title">
+            LIkn ;lskfndslkg dfgn iste natus error 5000
+          </h3>
+          <h3 class="carousel__wrapper-title">
+            TUkhijksdflk dsfgn unde omnis iste natus error 5000
+          </h3>
+
+          <button class="carousel__wrapper-btn">Learn Now!</button>
+
+          <span class="carousel__wrapper-indicator">
+            <span class="carousel__wrapper-indicator-item"></span>
+            <span class="carousel__wrapper-indicator-item"></span>
+            <span class="carousel__wrapper-indicator-item"></span>
+            <span class="carousel__wrapper-indicator-item"></span>
+            <span class="carousel__wrapper-indicator-item"></span>
+          </span>
+        </div>
+      </section>
+
+      <section class="pay">
+        <ul class="pay__wrapper">
+          <li class="pay__wrapper-item">
+            <span>
+              <img
+                src="./assets/icons/visa.png"
+                class="pay__wrapper-item-img"
+              />
+            </span>
+            <img
+              src="./assets/icons/master.png"
+              class="pay__wrapper-item-img"
+            />
+          </li>
+          <li class="pay__wrapper-item">
+            <img
+              src="./assets/icons/neteller.png"
+              class="pay__wrapper-item-img"
+            />
+          </li>
+          <li class="pay__wrapper-item">
+            <img
+              src="./assets/icons/perfectM.png"
+              class="pay__wrapper-item-img"
+            />
+          </li>
+          <li class="pay__wrapper-item">
+            <img
+              src="./assets/icons/sticPay.png"
+              class="pay__wrapper-item-img"
+            />
+          </li>
+          <li class="pay__wrapper-item">
+            <img
+              src="./assets/icons/fasaPay.png"
+              class="pay__wrapper-item-img"
+            />
+          </li>
+        </ul>
+      </section>
+    </main>
 
     <script src="./script.js"></script>
   </body>
