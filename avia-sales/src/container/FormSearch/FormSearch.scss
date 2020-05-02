@@ -1,0 +1,59 @@
+.form-search {
+  width: 600px;
+  margin: 50px auto;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+
+  .wrapper__button-search {
+    margin-top: 50px;
+
+    &__btn {
+      outline: none;
+      cursor: pointer;
+      width: 200px;
+      height: 50px;
+      background-color: rgb(252, 255, 49);
+      border: none;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+      position: relative;
+
+      &::before {
+        content: "";
+        display: block;
+        width: 25px;
+        height: 25px;
+        position: absolute;
+        top: calc(50% - 12.5px);
+        right: 20px;
+        transform: rotate(90deg);
+        background: url(../../assets/icons/plane-btn.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+
+      &-name {
+        font-size: 18px;
+        margin-right: 40px;
+      }
+    }
+  }
+}
+
+// @keyframes bounceOutRight {
+//   20% {
+//     opacity: 1;
+//     transform: translate3d(-20px, 0, 0);
+//   }
+
+//   to {
+//     opacity: 0;
+//     transform: translate3d(2000px, 0, 0);
+//   }
+// }
+
+// .bounceOutRight {
+//   animation-name: bounceOutRight;
+// }
