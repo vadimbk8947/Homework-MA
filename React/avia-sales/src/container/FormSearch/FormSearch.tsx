@@ -1,41 +1,35 @@
-import React, { useState } from "react";
+import React from "react";
+import { connect } from "react-redux";
+
 import Search from "../../components/Search/Search";
+import { getTicketsByQuery } from "../../redux/ticketsReducer";
+import { Context } from "../../Context";
+import { AppState } from "../..";
 import "./FormSearch.scss";
-import { getTickets } from "../../api/api";
 
-export default function FormSearch() {
-  const [state, setState] = useState({
-    codeFrom: "",
-    codeTo: "",
-    date: "",
-    ticketsResult: "",
-  });
+interface IFormSearch {
+  getTicketsByQuery: (codeFrom: string, codeTo: string, date: string) => void;
+  codeFrom: string;
+  codeTo: string;
+  date: string;
+}
 
-  const updData = (codeFrom, codeTo, date) => {
-    return setState({
-      ...state,
-      codeFrom: codeFrom,
-      codeTo: codeTo,
-      date: date,
-    });
-  };
-
-  const handleOnSubmit = (e) => {
+const FormSearch: React.FC<IFormSearch> = ({
+  getTicketsByQuery,
+  codeFrom,
+  codeTo,
+  date,
+}) => {
+  const handleOnSubmit = (e: React.FormEvent<HTMLElement>) => {
     e.preventDefault();
-    getTickets(state.codeFrom, state.codeTo, state.date)
-      .then((res) => res.json())
-      .then(({ current_depart_date_prices }) =>
-        setState({ ...state, ticketsResult: current_depart_date_prices })
-      )
-      .catch(console.error);
-  };
 
-  console.log(state.ticketsResult);
+    getTicketsByQuery(codeFrom, codeTo, date);
+  };
 
   return (
-    <>
-      <form className="form-search" onSubmit={handleOnSubmit}>
-        <Search updData={updData} />
+    <Context.Provider value={{ getTicketsByQuery }}>
+      <form className="form-search" onSubmit={(e) => handleOnSubmit(e)}>
+        <Search />
         <div className="wrapper__button-search">
           <button type="submit" className="wrapper__button-search__btn">
             <span className="wrapper__button-search__btn-name">
@@ -44,18 +38,18 @@ export default function FormSearch() {
           </button>
         </div>
       </form>
-
-      <div className="tickets-result">
-        {state.ticketsResult.length ? (
-          <ul className="tickets-result__list">
-            {state.ticketsResult.map((item, i) => (
-              <li key={i} className="tickets-result__list-item">
-                {item.gate}
-              </li>
-            ))}
-          </ul>
-        ) : null}
-      </div>
-    </>
+    </Context.Provider>
   );
-}
+};
+
+const mapStateToProps = (state: AppState) => ({
+  codeFrom: state.searchReducer.codeFrom,
+  codeTo: state.searchReducer.codeTo,
+  date: state.searchReducer.date,
+});
+
+const mapDispatchToProps = {
+  getTicketsByQuery,
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(FormSearch);

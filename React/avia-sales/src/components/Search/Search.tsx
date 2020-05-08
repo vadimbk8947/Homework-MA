@@ -1,57 +1,79 @@
-import React, { useState, useEffect } from "react";
-import "./Search.scss";
-import { getCitiesByQuery } from "../../api/api";
+import React, { useState, useEffect, useRef, useContext } from "react";
 
-export default function Search({ updData }) {
-  const [values, setValues] = useState({
+import API from "../../api/api";
+import "./Search.scss";
+import { Context } from "../../Context";
+import { connect } from "react-redux";
+import {
+  getCodeAirportFrom,
+  getCodeAirportTo,
+  getDepartDate,
+} from "../../redux/searchReducer";
+
+interface ISearch {
+  getCodeAirportFrom: (id: string | null) => void;
+  getCodeAirportTo: (id: string | null) => void;
+  getDepartDate: (date: string) => void;
+}
+
+const Search: React.FC<ISearch> = ({
+  getCodeAirportFrom,
+  getCodeAirportTo,
+  getDepartDate,
+}) => {
+  const [values, setValues] = useState<any>({
     citiesFrom: [],
     citiesTo: [],
-    filterCities: [],
-    query: "",
     codeFrom: "",
     codeTo: "",
     data: "",
   });
 
-  const handleOnChange = ({ target }) => {
+  const inputFrom = useRef<any>();
+  const inputTo = useRef<any>();
+
+  const { getTicketsByQuery } = useContext(Context);
+
+  useEffect(() => {
+    getTicketsByQuery(values.codeFrom, values.codeTo, values.data);
+  }, [values.data]);
+
+  const handleOnChange = ({ target }: any) => {
     if (target.value.length) {
-      getCitiesByQuery(target.value)
-        .then((res) => res.json())
-        .then((data) =>
-          target === document.querySelector(".wrapper__from-input")
-            ? setValues({ ...values, citiesFrom: data })
-            : setValues({ ...values, citiesTo: data })
+      API.getCitiesByQuery(target.value)
+        .then((res) =>
+          target === inputFrom.current
+            ? setValues({ ...values, citiesFrom: res.data })
+            : setValues({ ...values, citiesTo: res.data })
         )
-        .catch(console.error);
+        .catch((err) => console.error(err));
     }
   };
 
-  const handleOnClickFrom = ({ target }) => {
-    const inputForm = document.querySelector(".wrapper__from-input");
+  const handleOnClick = ({ target }: any) => {
     const spanFrom = document.querySelector(".wrapper__from__list-item-id");
-
-    setValues({ ...values, codeFrom: spanFrom.textContent, citiesFrom: [] });
-    spanFrom.textContent = "";
-    return (inputForm.value = target.textContent);
-  };
-
-  const handleOnClickTo = ({ target }) => {
-    const inputTo = document.querySelector(".wrapper__to-input");
     const spanTo = document.querySelector(".wrapper__to__list-item-id");
 
-    setValues({ ...values, codeTo: spanTo.textContent, citiesTo: [] });
-    spanTo.textContent = "";
-    return (inputTo.value = target.textContent);
-  };
+    if (target === document.querySelector(".wrapper__from__list-item")) {
+      getCodeAirportFrom(spanFrom!.textContent);
+      setValues({ ...values, citiesFrom: [] });
 
-  useEffect(() => {
-    updData(values.codeFrom, values.codeTo, values.data);
-  }, [values.data]);
+      spanFrom!.textContent = "";
+      inputFrom.current.value = target.textContent;
+    } else {
+      getCodeAirportTo(spanTo!.textContent);
+      setValues({ ...values, citiesTo: [] });
+
+      spanTo!.textContent = "";
+      inputTo.current.value = target.textContent;
+    }
+  };
 
   return (
     <div className="wrapper__search">
       <div className="wrapper__from">
         <input
+          ref={inputFrom}
           onChange={handleOnChange}
           type="text"
           className="input wrapper__from-input"
@@ -60,9 +82,9 @@ export default function Search({ updData }) {
         />
         {values.citiesFrom.length < 10 ? (
           <ul className="wrapper__from__list dropdown">
-            {values.citiesFrom.map((city, i) => (
+            {values.citiesFrom.map((city: any, i: number) => (
               <li
-                onClick={handleOnClickFrom}
+                onClick={handleOnClick}
                 key={i}
                 className="wrapper__from__list-item"
               >
@@ -76,6 +98,7 @@ export default function Search({ updData }) {
 
       <div className="wrapper__to">
         <input
+          ref={inputTo}
           onChange={handleOnChange}
           type="text"
           className="input wrapper__to-input"
@@ -83,9 +106,9 @@ export default function Search({ updData }) {
         />
         {values.citiesTo.length < 10 ? (
           <ul className="wrapper__to__list dropdown">
-            {values.citiesTo.map((city, i) => (
+            {values.citiesTo.map((city: any, i: number) => (
               <li
-                onClick={handleOnClickTo}
+                onClick={handleOnClick}
                 key={i}
                 className="wrapper__to__list-item"
               >
@@ -100,11 +123,19 @@ export default function Search({ updData }) {
       <div className="wrapper-date">
         <input
           type="date"
-          onChange={(e) => setValues({ ...values, data: e.target.value })}
+          onChange={(e) => getDepartDate(e.target.value)}
           className="input wrapper-date-input"
           placeholder="Отправление"
         />
       </div>
     </div>
   );
-}
+};
+
+const mapDispatchToProps = {
+  getCodeAirportFrom,
+  getCodeAirportTo,
+  getDepartDate,
+};
+
+export default connect(null, mapDispatchToProps)(Search);
