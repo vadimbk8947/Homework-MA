@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import { connect } from "react-redux";
 
 import Search from "../../components/Search/Search";
@@ -26,15 +26,33 @@ const FormSearch: React.FC<IFormSearch> = ({
     getTicketsByQuery(codeFrom, codeTo, date);
   };
 
+  //animation button plane
+  const plane = useRef<any>();
+
+  const handleOnClick = () => {
+    plane.current!.classList.toggle("active");
+    setTimeout(() => {
+      plane.current!.classList.toggle("active");
+    }, 2000);
+  };
+
   return (
     <Context.Provider value={{ getTicketsByQuery }}>
       <form className="form-search" onSubmit={(e) => handleOnSubmit(e)}>
         <Search />
         <div className="wrapper__button-search">
-          <button type="submit" className="wrapper__button-search__btn">
+          <button
+            onClick={handleOnClick}
+            type="submit"
+            className="wrapper__button-search__btn"
+          >
             <span className="wrapper__button-search__btn-name">
               Найти билеты
             </span>
+            <span
+              ref={plane}
+              className="wrapper__button-search__btn-plane"
+            ></span>
           </button>
         </div>
       </form>

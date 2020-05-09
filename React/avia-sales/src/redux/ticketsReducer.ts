@@ -13,12 +13,13 @@ export const getTicketsByQuery = (
 
   dispatch(showLoader());
 
-  dispatch({
-    type: GET_TICKETS,
-    payload: result,
-  });
-
-  dispatch(hideLoader());
+  setTimeout(() => {
+    dispatch({
+      type: GET_TICKETS,
+      payload: result,
+    });
+    dispatch(hideLoader());
+  }, 500);
 };
 
 const initialState = {

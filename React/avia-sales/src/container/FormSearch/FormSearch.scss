@@ -1,5 +1,4 @@
 .form-search {
-  width: 600px;
   margin: 50px auto;
   display: flex;
   flex-flow: column;
@@ -20,9 +19,12 @@
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
       position: relative;
 
-      &::before {
-        content: "";
-        display: block;
+      &-name {
+        font-size: 18px;
+        margin-right: 40px;
+      }
+
+      &-plane {
         width: 25px;
         height: 25px;
         position: absolute;
@@ -30,30 +32,28 @@
         right: 20px;
         transform: rotate(90deg);
         background: url(../../assets/icons/plane-btn.svg);
-        background-repeat: no-repeat;
         background-size: cover;
-      }
-
-      &-name {
-        font-size: 18px;
-        margin-right: 40px;
       }
     }
   }
 }
 
-// @keyframes bounceOutRight {
-//   20% {
-//     opacity: 1;
-//     transform: translate3d(-20px, 0, 0);
-//   }
+.active {
+  animation-name: bounceOutRight;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
 
-//   to {
-//     opacity: 0;
-//     transform: translate3d(2000px, 0, 0);
-//   }
-// }
-
-// .bounceOutRight {
-//   animation-name: bounceOutRight;
-// }
+@keyframes bounceOutRight {
+  0% {
+    transform: translateX(0) rotate(90deg);
+  }
+  20% {
+    opacity: 1;
+    // transform: translateX(-20px);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(200px) rotate(90deg);
+  }
+}

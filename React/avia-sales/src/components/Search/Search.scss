@@ -72,3 +72,25 @@
     }
   }
 }
+
+@media (max-width: 768px) {
+  .wrapper__search {
+    margin: 0 auto;
+    flex-flow: column;
+    box-shadow: none;
+    height: 100%;
+    right: 0;
+
+    .input {
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+      width: 300px;
+      margin: 10px auto;
+      border-radius: 5px;
+    }
+
+    .wrapper__from,
+    .wrapper__to {
+      margin: 0;
+    }
+  }
+}

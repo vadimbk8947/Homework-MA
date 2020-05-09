@@ -1,6 +1,8 @@
 .list-for-query {
   width: 75%;
   margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
 
   &__item {
     width: 230px;

@@ -80,7 +80,7 @@ const Search: React.FC<ISearch> = ({
           placeholder="Откуда"
           required
         />
-        {values.citiesFrom.length < 10 ? (
+        {values.citiesFrom.length < 12 ? (
           <ul className="wrapper__from__list dropdown">
             {values.citiesFrom.map((city: any, i: number) => (
               <li
